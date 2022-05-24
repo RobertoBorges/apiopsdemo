@@ -23,16 +23,6 @@ stages:
             inputs:
               version: 6.x
               includePreviewVersions: true
-
-          - task: CmdLine@2
-            inputs:
-              script: |
-                echo Write your commands here
-                
-                echo Hello world
-                
-                ls -la
-
           - task: DotNetCoreCLI@2
             displayName: Publish .NET Core application
             inputs:
