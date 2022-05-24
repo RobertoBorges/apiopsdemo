@@ -14,7 +14,7 @@ on:
 jobs:
   extract:
     runs-on: ubuntu-latest
-    environment: dev # change this to match the dev environment created in settings 
+    environment: Dev environment # change this to match the dev environment created in settings 
     steps:
       - uses: actions/checkout@v2
           
