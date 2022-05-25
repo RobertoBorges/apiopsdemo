@@ -4,7 +4,7 @@ info:
   version: '1.0'
 servers:
   - url: https://gateway.contosoapi202201.com/echo
-  - url: https://selfgw.contosoapi202201.com/echo
+  - url: https://scm.contosoapi202201.com/echo
 paths:
   /resource:
     get:
