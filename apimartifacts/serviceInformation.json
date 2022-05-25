@@ -1,0 +1,40 @@
+{
+  "name": "contosoapi202202",
+  "location": "East US",
+  "sku": {
+    "capacity": 1,
+    "name": "Developer"
+  },
+  "properties": {
+    "publisherEmail": "roborges@microsoft.com",
+    "publisherName": "contoso",
+    "apiVersionConstraint": {},
+    "certificates": [
+      {
+        "certificate": {
+          "expiry": "2023-04-08T02:10:31\u002B00:00",
+          "subject": "E=roborges@microsoft.com, CN=contosoapi202201.com, O=MS, L=Quebec, S=Quebec, C=CA",
+          "thumbprint": "4710A15C74BF5141894532953F09683E24DA34F6"
+        },
+        "storeName": "Root"
+      }
+    ],
+    "customProperties": {
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls10": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls11": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Ssl30": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TripleDes168": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls10": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls11": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Ssl30": "False",
+      "Microsoft.WindowsAzure.ApiManagement.Gateway.Protocols.Server.Http2": "False"
+    },
+    "notificationSenderEmail": "roborges@microsoft.com",
+    "publicNetworkAccess": "Enabled",
+    "virtualNetworkConfiguration": {
+      "subnetResourceId": "/subscriptions/dea5dcc6-1a1a-4694-8e6c-f340da9c7ea1/resourcegroups/apim-appgw-rg/providers/microsoft.network/virtualnetworks/appgwvnet/subnets/apimSubnet"
+    },
+    "virtualNetworkType": "Internal"
+  },
+  "tags": {}
+}
