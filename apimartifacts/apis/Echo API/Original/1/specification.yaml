@@ -19,6 +19,7 @@ paths:
           schema:
             enum:
               - sample
+              - sample2
             type: string
             default: sample
         - name: param2
