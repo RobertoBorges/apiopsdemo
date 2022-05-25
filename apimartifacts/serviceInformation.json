@@ -36,5 +36,8 @@
     },
     "virtualNetworkType": "Internal"
   },
-  "tags": {}
+  "tags": {},
+  "identity": {
+    "type": "SystemAssigned"
+  }
 }
