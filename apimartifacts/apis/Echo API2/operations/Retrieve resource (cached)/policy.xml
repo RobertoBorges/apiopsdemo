@@ -1,0 +1,21 @@
+<policies>
+	<inbound>
+		<base />
+		<cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none">
+			<vary-by-header>Accept</vary-by-header>
+			<vary-by-header>Accept-Charset</vary-by-header>
+		</cache-lookup>
+		<rewrite-uri template="/resource" />
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<base />
+		<cache-store duration="3600" />
+		<set-body template="none">Second API</set-body>
+	</outbound>
+	<on-error>
+		<base />
+	</on-error>
+</policies>
