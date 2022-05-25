@@ -3,7 +3,8 @@ info:
   title: Echo API
   version: '1.0'
 servers:
-  - url: https://contosoapi202202.azure-api.net/echo
+  - url: https://gateway.contosoapi202201.com/echo
+  - url: https://scm.contosoapi202201.com/echo
 paths:
   /resource:
     get:
