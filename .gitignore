@@ -92,7 +92,6 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
-apimartifacts/serviceInformation.json
 
 # Chutzpah Test files
 _Chutzpah*
