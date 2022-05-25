@@ -6,6 +6,29 @@ servers:
   - url: https://gateway.contosoapi202201.com/echo
   - url: https://scm.contosoapi202201.com/echo
 paths:
+  /resource-new:
+    get:
+      summary: Retrieve resource new
+      description: A demonstration of a GET call on a sample resource. It is handled by an "echo" backend which returns a response equal to the request (the supplied headers and body are being returned as received).
+      operationId: retrieve-resource-new
+      parameters:
+        - name: param1
+          in: query
+          description: A sample parameter that is required and has a default value of "sample".
+          required: true
+          schema:
+            enum:
+              - sample
+            type: string
+            default: sample
+        - name: param2
+          in: query
+          description: 'Another sample parameter, set to not required.'
+          schema:
+            type: number
+      responses:
+        '200':
+          description: Returned in all cases.
   /resource:
     get:
       summary: Retrieve resource
