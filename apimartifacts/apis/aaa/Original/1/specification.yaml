@@ -20,7 +20,14 @@ paths:
       operationId: getnew
       responses:
         '200':
-          description: 
+          description: sasasas
+  /resorce2:
+    get:
+      summary: getnew2
+      operationId: getnew
+      responses:
+        '200':
+          description: dsadsasd
 components:
   securitySchemes:
     apiKeyHeader:
