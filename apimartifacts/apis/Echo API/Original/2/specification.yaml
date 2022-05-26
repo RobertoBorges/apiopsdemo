@@ -2,8 +2,6 @@ openapi: 3.0.1
 info:
   title: Echo API
   version: '1.0'
-servers:
-  - url: https://gateway.contosoapi202201.com/echo
 paths:
   /resource:
     get:
