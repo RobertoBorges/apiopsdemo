@@ -29,6 +29,41 @@
       "Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Ssl30": "False",
       "Microsoft.WindowsAzure.ApiManagement.Gateway.Protocols.Server.Http2": "False"
     },
+    "hostnameConfigurations": [
+      {
+        "hostName": "contosoapi202202.azure-api.net",
+        "certificateSource": "BuiltIn",
+        "defaultSslBinding": false,
+        "negotiateClientCertificate": false,
+        "type": "Proxy"
+      },
+      {
+        "hostName": "portal.contosoapi202201.com",
+        "certificate": {
+          "expiry": "2023-04-08T02:13:29\u002B00:00",
+          "subject": "E=roborges@microsoft.com, CN=portal.contosoapi202201.com, O=MS, L=Quebec, S=Quebec, C=CA",
+          "thumbprint": "3483E9B468B04EA1222BB06242F3E29E54327B46"
+        },
+        "certificateSource": "KeyVault",
+        "defaultSslBinding": false,
+        "keyVaultId": "https://keyvbob.vault.azure.net/secrets/portal-contosoapi202201-com",
+        "negotiateClientCertificate": false,
+        "type": "DeveloperPortal"
+      },
+      {
+        "hostName": "gateway.contosoapi202201.com",
+        "certificate": {
+          "expiry": "2023-04-08T02:13:29\u002B00:00",
+          "subject": "E=roborges@microsoft.com, CN=gateway.contosoapi202201.com, O=MS, L=Quebec, S=Quebec, C=CA",
+          "thumbprint": "31EE1280D69CA245D795BA71C4573FD328DC8CE1"
+        },
+        "certificateSource": "KeyVault",
+        "defaultSslBinding": true,
+        "keyVaultId": "https://keyvbob.vault.azure.net/secrets/gateway-contosoapi202201-com",
+        "negotiateClientCertificate": false,
+        "type": "Proxy"
+      }
+    ],
     "notificationSenderEmail": "roborges@microsoft.com",
     "publicNetworkAccess": "Enabled",
     "virtualNetworkConfiguration": {
