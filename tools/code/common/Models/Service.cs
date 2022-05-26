@@ -82,8 +82,8 @@ public sealed record Service([property: JsonPropertyName("name")] string Name,
         [JsonPropertyName("enableClientCertificate")]
         public bool? EnableClientCertificate { get; init; }
         [JsonPropertyName("hostnameConfigurations")]
-        [JsonIgnore(Condition = JsonIgnoreCondition.Always)] // Ignore this property, we'll filter it in custom converter. APIM doesn't allow host name configurations ending with "azure-api.net"
-        [JsonConverter(typeof(ApiManagementServicePropertiesConverter))]
+        // [JsonIgnore(Condition = JsonIgnoreCondition.Always)] // Ignore this property, we'll filter it in custom converter. APIM doesn't allow host name configurations ending with "azure-api.net"
+        // [JsonConverter(typeof(ApiManagementServicePropertiesConverter))]
         public HostnameConfiguration[]? HostnameConfigurations { get; init; }
         [JsonPropertyName("notificationSenderEmail")]
         public string? NotificationSenderEmail { get; init; }
