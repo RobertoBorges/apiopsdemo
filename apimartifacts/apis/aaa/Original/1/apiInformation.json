@@ -1,0 +1,15 @@
+{
+  "name": "aaa",
+  "properties": {
+    "path": "bing",
+    "displayName": "aaa",
+    "apiRevision": "1",
+    "description": "",
+    "isCurrent": true,
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://ww.bing.com",
+    "subscriptionRequired": true
+  }
+}
