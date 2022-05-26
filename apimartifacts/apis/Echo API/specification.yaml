@@ -1,15 +1,14 @@
 openapi: 3.0.1
 info:
-  title: Echo API2
+  title: Echo API
   version: '1.0'
 servers:
   - url: https://gateway.contosoapi202201.com/echo
-  - url: https://scm.contosoapi202201.com/echo
 paths:
   /resource:
     get:
       summary: Retrieve resource
-      description: this is a change a demonstration of as GET call on a sample resource. It is handled by an "echo" backend which returns a response equal to the request (the supplied headers and body are being returned as received).
+      description: A demonstration of a GET call on a sample resource. It is handled by an "echo" backend which returns a response equal to the request (the supplied headers and body are being returned as received).
       operationId: retrieve-resource
       parameters:
         - name: param1
@@ -19,7 +18,6 @@ paths:
           schema:
             enum:
               - sample
-              - sample2
             type: string
             default: sample
         - name: param2
@@ -102,3 +100,11 @@ components:
 security:
   - apiKeyHeader: [ ]
   - apiKeyQuery: [ ]
+x-ms-paths:
+  /resource:
+    get:
+      summary: GetPlus
+      operationId: getplus
+      responses:
+        '200':
+          description: 
