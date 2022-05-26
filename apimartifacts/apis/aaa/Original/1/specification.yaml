@@ -9,10 +9,11 @@ paths:
   /resource:
     get:
       summary: get
+      description: get
       operationId: get
       responses:
         '200':
-          description: 
+          description: ''
 components:
   securitySchemes:
     apiKeyHeader:
